@@ -5,32 +5,16 @@ import java.io.IOException;
 public class ts2 {
   public static void main(String[] args) {
     BufferedReader dataIn = new BufferedReader(new InputStreamReader(System.in));
-    String word = "";
-    System.out.print("Bahasa inggris Selamat Tinggal :");
+    String name = "";
+    System.out.print("Enter Your Name :");
 
     try {
-      word = dataIn.readLine();
+      name = dataIn.readLine();
     } catch (IOException e) {
       System.out.println("Error!");
     }
 
-    String word2 = "";
-    System.out.print("bahasa inggrisnya dan : ");
-
-    try {
-      word2 = dataIn.readLine();
-    } catch (IOException e) {
-      System.out.println("Error!");
-    }
-    String word3 = "";
-    System.out.print("bahasa inggrisnya halo :");
-
-    try {
-      word3 = dataIn.readLine();
-    } catch (IOException e) {
-      System.out.println("Error!");
-    }
-    System.out.println(word + " " + word2 + " " + word3 + " ");
+    System.out.println(" Hello " + name + " !");
 
   }
 }
