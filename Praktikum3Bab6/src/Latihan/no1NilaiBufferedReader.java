@@ -6,20 +6,8 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 
 public class no1NilaiBufferedReader {
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args) {
     BufferedReader dataIn = new BufferedReader(new InputStreamReader(System.in));
-    // int a;
-
-    // System.out.println("masukkan nilai a");
-    // try {
-    // a = Integer.parseInt(dataIn.readLine());
-    // } catch (IOException e) {
-    // System.out.println("Error!");
-    // }
-
-    // // System.out.println(a);
-    // System.out.println(a);
-
     String a = "";
     String b = "";
     String c = "";
