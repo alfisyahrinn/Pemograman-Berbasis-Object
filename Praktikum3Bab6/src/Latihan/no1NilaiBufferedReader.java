@@ -23,14 +23,22 @@ public class no1NilaiBufferedReader {
       System.out.println("Error!");
     }
 
-    int pertama, kedua, ketiga, hasil;
+    int pertama, kedua, ketiga;
+    float i, h, p, hasil;
 
-    pertama = Integer.parseInt(a);
-    kedua = Integer.parseInt(b);
-    ketiga = Integer.parseInt(c);
+    i = Float.parseFloat(a);
+    h = Float.parseFloat(b);
+    p = Float.parseFloat(c);
+    // pertama = Integer.parseFloat(a);
+    // kedua = Integer.parseFloat(b);
+    // ketiga = Integer.parseFloat(c);
 
-    hasil = (pertama + kedua + ketiga);
+    hasil = (i + h + p) / 3;
+    if (hasil > 60) {
+      System.out.println(" Mantap :) Nilaimu : " + hasil);
+    } else {
+      System.out.println(" Wkwkwk :-( Nilaimu : " + hasil);
+    }
 
-    System.out.println("hasil " + hasil);
   }
 }

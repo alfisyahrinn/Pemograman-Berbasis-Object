@@ -13,12 +13,20 @@ public class no1_1no1NilaiJOptionPane {
     int kedua = Integer.valueOf(b).intValue();
     c = JOptionPane.showInputDialog("nilai ketiga");
     int ketiga = Integer.valueOf(c).intValue();
+    int rata = 0;
+    try {
+      rata = (Integer.parseInt(a) + Integer.parseInt(b) + Integer.parseInt(c)) / 3;
+      String msg = "Rata-Rata = " + rata;
+      if (rata >= 60) {
+        JOptionPane.showMessageDialog(null, msg + " :-)");
+      } else {
+        JOptionPane.showMessageDialog(null, msg + " :-( ");
+      }
+    } catch (NumberFormatException nfe) {
+      String msg = "DATA YANG DIINPUT TIDAK VALID!!";
+      JOptionPane.showMessageDialog(null, msg);
+    }
 
-    int rata_rata = pertama + kedua + ketiga;
-    String hasil = "";
-    hasil += "Rata-rata nilai Anda adalah " + rata_rata + "\n";
-
-    JOptionPane.showMessageDialog(null, hasil);
   }
 
 }
